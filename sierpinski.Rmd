@@ -19,7 +19,5 @@ sierpinski.df <- generateSierpinski(rows = 2^depth)
 ```
 
 ```{r, animation.hook="gifski"}
-for (draw.depth in seq_len(depth)) {
-  plot(sierpinski.df[seq_len(2^draw.depth), ], ylim=c(0, 1), xlim=c(0, 1), pch=".")
-}
+plot(sierpinski.df, ylim=c(1,0),  pch=".", cex=0.5, asp=1) 
 ```
