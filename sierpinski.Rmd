@@ -19,5 +19,6 @@ sierpinski.df <- generateSierpinski(rows = 2^depth)
 ```
 
 ```{r, animation.hook="gifski"}
-plot(sierpinski.df, ylim=c(1,0),  pch=".", cex=0.5, asp=1) 
+plot(sierpinski.df, ylim=c(1,0),  pch=".", cex=0.5, asp=1,
+     main = "", xlab="", ylab="", xaxt="n", yaxt="n", bty="n") 
 ```
